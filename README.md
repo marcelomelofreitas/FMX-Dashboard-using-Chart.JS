@@ -6,13 +6,10 @@ This is an update to this blog and includes a source code update from Bootstrap
 3 to Bootstrap 4. The older Bootstrap 3 code is still available for download.
 
 When creating a clean Dashboard for your Application, as a developer your
-requirements would require:
-
--   Be responsive.
-
--   Be professional with a clean look and feel.
-
--   Be gesture interactive.
+requirements would require the dashboard to:
+-   be responsive.
+-   be professional with a clean look and feel.
+-   be gesture interactive.
 
 **Chart.js library** provides all of this and can be incorporated into your
 Delphi FMX or VCL App for quick results. The Chart.js JavaScript library is an
