@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Chromelink Solutions">
+    <meta name="Chromelink Solutions" content="">
+           <title> chartjs vault
+</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+   <script src="js/Chart.bundle.min.js"></script>
+   <script src="js/Chart.min.js"></script>
+
+        </head>
+
+   <body>
+   <br>
+      <div class="container">
+            <div class="row">
+               <div class="col-xs-12   ">
+
+          <div class="row">
+      <div class="col-xs-6 ">
+
+<canvas id="doughnut-chart1" width="20" height="20"></canvas>
+<borl_whitespace><!-- Bar chart-->
+<script>
+new Chart(document.getElementById("doughnut-chart1"), {
+    type: 'doughnut',
+    data: {
+      labels: ["Kitchen", "Bathroom", "Bedroom1", "Lounge", "Dining Room"],
+      datasets: [
+        {
+          label: "Places",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: [24,67,734,84,43]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: 'True',
+        text: 'Total Rooms'
+      }
+    }
+});
+
+</script></borl_whitespace>
+</div>
+
+
+
+<div class="col-xs-6  ">
+
+<canvas id="mixed-chart" width="20" height="20"></canvas>
+<script>
+new Chart(document.getElementById("mixed-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["Yr1", "Yr2", "Curr Yr3"],
+      datasets: [{
+          label: "Purchased",
+          type: "line",
+          borderColor: "#8e5ea2",
+          data: [408,547,675],
+          fill: false
+        }, {
+          label: "Disposed",
+          type: "line",
+          borderColor: "#3e95cd",
+          data: [133,221,783],
+          fill: false
+        }, {
+          label: "Purchased",
+          type: "bar",
+          backgroundColor: "rgba(0,120,5,0.2)",
+          data: [408,547,675],
+        }, {
+          label: "Disposed",
+          type: "bar",
+          backgroundColor: "rgba(0,30,220,0.2)",
+          backgroundColorHover: "#3e95cd",
+          data: [133,221,783]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Purchased & Disposed Assets'
+      },
+      legend: { display: false }
+    }
+});
+</script>
+
+</div>
+</div>
+ <div class="row">
+ 
+<div class="col-xs-6  ">
+<canvas id="bar-chart-grouped" width="20" height="20"></canvas>
+<script>
+new Chart(document.getElementById("bar-chart-grouped"), {
+    type: 'bar',
+    data: {
+      labels: ["1900", "1950", "1999", "2050"],
+      datasets: [
+        {
+          label: "Africa",
+          backgroundColor: "#3e95cd",
+          data: [133,221,783,2478]
+        }, {
+          label: "Europe",
+          backgroundColor: "#8e5ea2",
+          data: [408,547,675,734]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Population growth (millions)'
+      }
+    }
+});
+
+</script>
+</div>
+<div class="col-xs-6  ">
+<canvas id="chart-area" width="20" height="20"></canvas>
+<borl_whitespace><!-- Pie chart-->
+<script>
+new Chart(document.getElementById("chart-area"), {
+    type: 'pie',
+    data: {
+      labels: ["Kitchen", "Bathroom", "Bedroom1", "Lounge", "Dining Room"],
+      datasets: [
+        {
+          label: "Places",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: [24,67,734,84,43]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: 'True',
+        text: 'Total Rooms'
+      }
+    }
+});
+</script>
+</div>
+<div class="col-xs-6  ">
+<canvas id="bar-chart5" width="20" height="20"></canvas>
+
+<script>
+new Chart(document.getElementById("bar-chart5"), {
+    type: 'bar',
+    data: {
+      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          data: [2478,5267,734,784,433]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Predicted world population (millions) in 2050'
+      }
+    }
+});
+</script>
+
+</div>
+</div></div>
+</div>
+</body>
+
+</html>
