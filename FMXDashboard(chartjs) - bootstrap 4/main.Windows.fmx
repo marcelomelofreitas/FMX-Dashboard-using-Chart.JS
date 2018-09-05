@@ -1,0 +1,7 @@
+inherited Form4_Windows: TForm4_Windows
+  ClientHeight = 420
+  DesignerMasterStyle = 0
+  inherited WebBrowser1: TWebBrowser
+    Size.Height = 363.000000000000000000
+  end
+end

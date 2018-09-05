@@ -1,0 +1,24 @@
+inherited Form4_LgXhdpiPh: TForm4_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited Button1: TButton
+      Size.Width = 227.694610595703100000
+    end
+    inherited Button2: TButton
+      Position.X = 226.347305297851600000
+      Size.Width = 223.652694702148400000
+    end
+  end
+  inherited WebBrowser1: TWebBrowser
+    Size.Width = 450.000000000000000000
+    Size.Height = 630.000000000000000000
+  end
+  inherited Label1: TLabel
+    Position.Y = 48.000000000000000000
+    Size.Width = 450.000000000000000000
+  end
+end
